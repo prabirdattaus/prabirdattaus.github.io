@@ -2,7 +2,7 @@
 
 This repository contains the files for my personal website:
 
-**https://prabirdattaus.github.io**
+**https://prabirdatta.com**
 
 The site is built with plain HTML and CSS and is hosted free of charge using
 GitHub Pages.
