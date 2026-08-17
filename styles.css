@@ -269,41 +269,6 @@ h2 {
   font-size: 1.05rem;
 }
 
-.highlights {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 0.65rem;
-  margin-top: 1.5rem;
-}
-
-.highlights div {
-  display: flex;
-  min-height: 120px;
-  flex-direction: column;
-  justify-content: space-between;
-  padding: 1.5rem;
-  border: 1px solid var(--line);
-  border-radius: 1rem;
-  background: rgba(255, 255, 255, 0.25);
-}
-
-.highlights strong {
-  color: var(--forest);
-  font-family: "Newsreader", serif;
-  font-size: clamp(1.8rem, 3vw, 2.5rem);
-  font-weight: 600;
-  line-height: 1;
-}
-
-.highlights span {
-  margin-top: 1rem;
-  font-size: 0.72rem;
-  font-weight: 600;
-  letter-spacing: 0.07em;
-  line-height: 1.35;
-  text-transform: uppercase;
-}
-
 .contact {
   margin-block: 2rem 7rem;
   padding: clamp(3rem, 8vw, 7rem);
@@ -376,14 +341,6 @@ footer a {
   .section-number {
     padding-bottom: 0.8rem;
     border-bottom: 1px solid var(--line);
-  }
-
-  .highlights {
-    grid-template-columns: 1fr;
-  }
-
-  .highlights div {
-    min-height: 100px;
   }
 
   .contact {
