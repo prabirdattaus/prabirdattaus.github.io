@@ -168,73 +168,32 @@ h2 {
 
 .hero-art {
   position: relative;
-  min-height: 480px;
+  width: min(100%, 440px);
+  aspect-ratio: 3 / 4;
+  margin: 0;
   overflow: hidden;
+  justify-self: end;
   border-radius: 48% 48% 1rem 1rem;
   background: var(--cream);
 }
 
-.sun {
-  position: absolute;
-  top: 13%;
-  right: 12%;
-  width: 145px;
-  aspect-ratio: 1;
-  border-radius: 50%;
-  background: var(--sun);
+.hero-art img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
-.arch {
-  position: absolute;
-  bottom: -16%;
-  border-radius: 50% 50% 0 0;
-}
-
-.arch-back {
-  left: -18%;
-  width: 85%;
-  height: 76%;
-  background: var(--sage);
-  transform: rotate(8deg);
-}
-
-.arch-front {
-  right: -19%;
-  width: 92%;
-  height: 66%;
-  background: var(--forest);
-  transform: rotate(-9deg);
-}
-
-.leaf {
-  position: absolute;
-  width: 56px;
-  height: 160px;
-  border-radius: 100% 0 100% 0;
-  background: var(--clay);
-  transform-origin: bottom center;
-}
-
-.leaf-one {
-  right: 20%;
-  bottom: 14%;
-  transform: rotate(24deg);
-}
-
-.leaf-two {
-  right: 32%;
-  bottom: 11%;
-  transform: rotate(-24deg) scale(0.75);
-}
-
-.art-caption {
+.hero-art figcaption {
   position: absolute;
   bottom: 1.1rem;
   left: 1.4rem;
-  z-index: 2;
-  color: var(--paper);
+  padding: 0.35rem 0.65rem;
+  border-radius: 100px;
+  background: rgba(23, 33, 29, 0.72);
+  color: white;
   font-size: 0.68rem;
   letter-spacing: 0.18em;
+  text-transform: uppercase;
 }
 
 .section {
@@ -345,7 +304,7 @@ footer a {
   }
 
   .hero-art {
-    min-height: 380px;
+    justify-self: center;
   }
 
   .section {
