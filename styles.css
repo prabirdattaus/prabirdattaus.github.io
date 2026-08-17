@@ -133,9 +133,8 @@ h1 {
   font-size: clamp(1.15rem, 2.25vw, 1.5rem);
 }
 
-h1 em {
+h1 {
   color: var(--forest);
-  font-weight: 500;
 }
 
 h2 {
