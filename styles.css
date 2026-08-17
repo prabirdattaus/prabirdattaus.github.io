@@ -146,7 +146,7 @@ h2 {
 .intro {
   max-width: 520px;
   margin: 2rem 0;
-  font-size: clamp(1.05rem, 2vw, 1.25rem);
+  font-size: clamp(1.155rem, 2.2vw, 1.375rem);
 }
 
 .button {
