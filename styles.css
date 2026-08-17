@@ -143,6 +143,10 @@ h2 {
   line-height: 1.05;
 }
 
+.about h2 {
+  font-size: clamp(1.3rem, 2.5vw, 2.3rem);
+}
+
 .intro {
   max-width: 520px;
   margin: 2rem 0;
