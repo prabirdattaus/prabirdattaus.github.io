@@ -148,7 +148,7 @@ h2 {
 }
 
 .interests h2 {
-  font-size: clamp(0.52rem, 1vw, 0.92rem);
+  font-size: clamp(1.04rem, 2vw, 1.84rem);
 }
 
 .intro {
