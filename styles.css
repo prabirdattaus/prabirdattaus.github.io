@@ -147,6 +147,10 @@ h2 {
   font-size: clamp(1.3rem, 2.5vw, 2.3rem);
 }
 
+.interests h2 {
+  font-size: clamp(0.52rem, 1vw, 0.92rem);
+}
+
 .intro {
   max-width: 520px;
   margin: 2rem 0;
