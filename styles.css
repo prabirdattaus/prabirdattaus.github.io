@@ -243,6 +243,10 @@ h2 {
   margin-bottom: 0.65rem;
 }
 
+.publication-list {
+  display: grid;
+}
+
 .publication-link {
   display: flex;
   align-items: center;
@@ -252,6 +256,12 @@ h2 {
   font-size: 1.15rem;
   line-height: 1.35;
   text-decoration: none;
+}
+
+.publication-link + .publication-link {
+  margin-top: 1rem;
+  padding-top: 1rem;
+  border-top: 1px solid var(--line);
 }
 
 .publication-link span:last-child {
