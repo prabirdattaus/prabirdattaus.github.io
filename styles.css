@@ -269,6 +269,21 @@ h2 {
   font-size: 1.05rem;
 }
 
+.publications {
+  margin-top: 2rem;
+  padding: 1.5rem;
+  border-left: 3px solid var(--clay);
+  background: rgba(255, 255, 255, 0.25);
+}
+
+.publications .eyebrow {
+  margin-bottom: 0.65rem;
+}
+
+.publications-note {
+  margin: 0;
+}
+
 .contact {
   margin-block: 2rem 7rem;
   padding: clamp(3rem, 8vw, 7rem);
