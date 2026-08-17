@@ -130,7 +130,7 @@ h2 {
 }
 
 h1 {
-  font-size: clamp(2.3rem, 4.5vw, 4rem);
+  font-size: clamp(1.15rem, 2.25vw, 1.5rem);
 }
 
 h1 em {
@@ -261,26 +261,48 @@ h2 {
   margin-bottom: 0;
 }
 
-.now-card {
+.interest-details {
   align-self: end;
+}
+
+.interest-details > p {
+  margin-top: 0;
+  font-size: 1.05rem;
+}
+
+.highlights {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.65rem;
+  margin-top: 1.5rem;
+}
+
+.highlights div {
+  display: flex;
+  min-height: 120px;
+  flex-direction: column;
+  justify-content: space-between;
   padding: 1.5rem;
   border: 1px solid var(--line);
   border-radius: 1rem;
   background: rgba(255, 255, 255, 0.25);
 }
 
-.now-card p {
-  margin: 0;
+.highlights strong {
+  color: var(--forest);
+  font-family: "Newsreader", serif;
+  font-size: clamp(1.8rem, 3vw, 2.5rem);
+  font-weight: 600;
+  line-height: 1;
 }
 
-.status-dot {
-  display: inline-block;
-  width: 10px;
-  height: 10px;
-  margin-bottom: 1rem;
-  border-radius: 50%;
-  background: var(--clay);
-  box-shadow: 0 0 0 6px rgba(196, 109, 75, 0.15);
+.highlights span {
+  margin-top: 1rem;
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.07em;
+  line-height: 1.35;
+  text-transform: uppercase;
 }
 
 .contact {
@@ -355,6 +377,14 @@ footer a {
   .section-number {
     padding-bottom: 0.8rem;
     border-bottom: 1px solid var(--line);
+  }
+
+  .highlights {
+    grid-template-columns: 1fr;
+  }
+
+  .highlights div {
+    min-height: 100px;
   }
 
   .contact {
