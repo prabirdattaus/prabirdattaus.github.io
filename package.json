@@ -1,0 +1,7 @@
+{
+  "name": "prabir-datta-website",
+  "private": true,
+  "scripts": {
+    "dev": "bun run server.ts"
+  }
+}
