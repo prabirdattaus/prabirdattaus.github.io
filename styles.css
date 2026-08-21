@@ -522,7 +522,8 @@ footer a {
 .explorer-main {
   display: grid;
   grid-template-columns: 1fr 0.85fr;
-  gap: clamp(2.5rem, 7vw, 7rem);
+  column-gap: clamp(2.5rem, 7vw, 7rem);
+  row-gap: clamp(1.25rem, 3.5vw, 3.5rem);
   align-items: center;
   padding-block: clamp(4rem, 9vw, 8rem);
 }
@@ -565,8 +566,8 @@ footer a {
 
 .country-gallery {
   grid-column: 1 / -1;
-  margin-top: clamp(2rem, 5vw, 4rem);
-  padding-top: clamp(3rem, 6vw, 5rem);
+  margin-top: clamp(1rem, 2.5vw, 2rem);
+  padding-top: clamp(1.5rem, 3vw, 2.5rem);
   border-top: 1px solid var(--line);
 }
 
@@ -631,7 +632,7 @@ footer a {
 
 .achievements-main h1 {
   max-width: 700px;
-  font-size: clamp(2.8rem, 7vw, 6.5rem);
+  font-size: clamp(1.4rem, 3.5vw, 3.25rem);
   line-height: 0.92;
 }
 
@@ -659,7 +660,7 @@ footer a {
 }
 
 .achievement-record h2 {
-  font-size: clamp(2rem, 4vw, 3.5rem);
+  font-size: clamp(1.4rem, 2.8vw, 2.45rem);
 }
 
 .recognition-results {
@@ -730,7 +731,7 @@ footer a {
 }
 
 .blog-intro h1 {
-  font-size: clamp(3.5rem, 9vw, 7rem);
+  font-size: clamp(2.625rem, 6.75vw, 5.25rem);
   line-height: 0.9;
 }
 
