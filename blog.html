@@ -15,6 +15,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="styles.css" />
+    <script type="module" src="blog.js"></script>
   </head>
   <body class="blog-page">
     <a class="skip-link" href="#main-content">Skip to main content</a>
@@ -35,7 +36,7 @@
     </header>
 
     <main class="blog-main" id="main-content">
-      <header class="blog-intro">
+      <header class="blog-intro" id="blog-intro">
         <p class="eyebrow">Notes and discoveries</p>
         <h1>Blog</h1>
         <p>
@@ -44,46 +45,36 @@
         </p>
       </header>
 
-      <article class="blog-post" aria-labelledby="welcome-post-heading">
+      <section class="blog-list" id="blog-list" aria-labelledby="posts-heading">
+        <h2 class="visually-hidden" id="posts-heading">Blog posts</h2>
+        <p class="blog-status" id="blog-status" role="status">Loading posts&hellip;</p>
+        <div id="blog-list-items"></div>
+      </section>
+
+      <article class="blog-post" id="blog-post" hidden>
+        <a class="blog-back" href="blog.html">&larr; All posts</a>
         <header>
-          <p class="eyebrow">First post</p>
-          <h2 id="welcome-post-heading">Welcome to my blog</h2>
+          <p class="eyebrow" id="post-date">Blog post</p>
+          <h1 id="post-title"></h1>
         </header>
 
-        <div class="blog-post-body">
-          <p>
-            I created this page to share stories from my philatelic research,
-            travels, and lifelong interest in collecting.
-          </p>
-          <p>
-            Future posts will explore observations, questions, and discoveries
-            that may be useful to fellow collectors and curious travellers.
-            I hope you will join the conversation below.
-          </p>
-        </div>
+        <div class="blog-post-body" id="post-body"></div>
 
         <section class="blog-comments" aria-labelledby="comments-heading">
           <p class="eyebrow">Conversation</p>
           <h2 id="comments-heading">Comments</h2>
-          <p>
-            Nauru is now officially known as “Republic of Naoero”. The state
-            notified the United Nations of the change on 26 June 2026.
-          </p>
           <p class="comment-note">
             Comments are hosted through GitHub. Sign in with a free GitHub
             account to join the discussion.
           </p>
-          <script
-            src="https://utteranc.es/client.js"
-            repo="prabirdattaus/prabirdattaus.github.io"
-            issue-term="pathname"
-            theme="github-light"
-            crossorigin="anonymous"
-            async
-          ></script>
+          <div id="comments"></div>
           <noscript>Please enable JavaScript to view and write comments.</noscript>
         </section>
       </article>
+
+      <noscript>
+        <p class="blog-message">Please enable JavaScript to view the blog.</p>
+      </noscript>
     </main>
   </body>
 </html>
